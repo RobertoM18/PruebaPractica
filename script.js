@@ -4,6 +4,9 @@ let currentInput = '';
     let shouldResetScreen = false;
 
     const display = document.getElementById('display');
+    document.getElementById('toggle-theme').addEventListener('click', function() {
+    document.body.classList.toggle('dark');
+  });
 
     function appendNumber(number) {
       if (display.textContent === '0' || shouldResetScreen) {
