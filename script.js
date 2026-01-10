@@ -48,3 +48,12 @@ let currentInput = '';
       firstValue = '';
       operator = '';
     }
+    
+    function deleteLastDigit() {
+      if (display.textContent.length > 1) {
+        display.textContent = display.textContent.slice(0, -1);
+      } else {
+        display.textContent = '0';
+      }
+      currentInput = display.textContent;
+    }
